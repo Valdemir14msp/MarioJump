@@ -1,0 +1,198 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.game-board{
+  align-items: center;
+  width: 80%;
+  height: 500px;
+  border-bottom: 15px solid rgb(35, 160, 35);
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(#3675fc, #e0f6ff);
+}
+
+.clouds{
+  position: absolute;
+  width: 300px;
+  animation: clouds-animation 140s linear infinite;
+  bottom: 240px;
+}
+
+.estadio{
+  position: absolute;
+  width: 135px;
+  bottom: -7px;
+  animation: estadio-animation 27s linear infinite;
+}
+
+.predios1{
+  position: absolute;
+  width: 600px;
+  bottom: -10px;
+  animation: predios1-animation 20s infinite linear;
+}
+.predios2{
+  position: absolute;
+  width:300px;
+  bottom: 0;
+  animation: predios2-animation1 50s infinite linear; 
+}
+
+.predios3{
+  position: absolute;
+  width: 300px;
+  bottom: 0;
+  animation: predios2-animation2 40s infinite linear;
+}
+
+.aviao{
+  position: absolute;
+  width: 130px;
+  bottom: 140px;
+  animation: aviao-animation 20s infinite linear;
+}
+
+.pipe{
+  position: absolute;
+  bottom: 0;
+  width: 50px;
+  animation: pipe-animation 1.8s infinite linear;
+  
+}
+
+.mario{
+  width: 120px;
+  position: absolute;
+  bottom: 0;
+}
+
+.jump{
+  animation: jump 500ms ease-out;
+}
+
+.gameOverId{
+  display: none;
+}
+
+.gameOverClass{
+  display: block;
+  text-align: center;
+
+  /* deixa centralizado */
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  left: 50%;
+  top: 50%;
+  margin: -150px 0 0 -150px;
+  
+  background: rgba(207, 5, 5, 0.822);
+  border: 4px solid black;
+  border-radius: 15px;
+}
+
+h6{
+  font-size: 50pt;
+  margin: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button{
+  width: 80%;
+  height: 30%;
+  margin-top: 5px;
+  font-size: 20pt;
+  border-radius: 20px;
+  border: 2px rgb(70, 5, 248) solid;
+}
+
+@keyframes pipe-animation{
+  from{
+    right: -80px;
+  }
+  to{
+    right: 100%;
+  }
+}
+@keyframes jump{
+  0%{
+    bottom: 0;
+  }
+  40%{
+    bottom: 180px;
+  }
+  50%{
+    bottom: 180px;
+  }
+  60%{
+    bottom: 150px;
+  }
+
+  100%{
+    bottom: 0;
+  }
+
+  }
+  
+@keyframes clouds-animation{
+    from{
+      right: -300px;
+    }
+    to{
+      right: 100%;
+    }
+  }
+
+@keyframes predios1-animation{
+    from{
+      right: -600px;
+    }
+    to{
+      right: 100%;
+    }
+  } 
+
+@keyframes predios2-animation1{
+    from{
+      right: -850px;
+    }
+    to{
+      right: 100%;
+    }
+  }
+
+@keyframes predios2-animation2{
+    from{
+      right: -400px;
+    }
+    to{
+      right: 100%;
+    }
+  }
+  
+@keyframes estadio-animation{
+    from{
+      right: -500px;
+    }
+    to{
+      right: 100%;
+    }
+  }
+
+@keyframes aviao-animation{
+    from{
+      left: -500px;
+    }
+    to{
+      left: 100%;
+    }
+  }
+  
+@keyframes btn-animation{
+  
+}
+  
